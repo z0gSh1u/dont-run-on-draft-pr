@@ -1,0 +1,16 @@
+name: Test Myself
+
+on:
+  pull_request:
+    types:
+      - opened
+
+jobs:
+  dont-run-on-draft-pr:
+    uses: z0gSh1u/dont-run-on-draft-pr@v1
+
+  whatever-else:
+    needs: dont-run-on-draft-pr
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hello, world!"
