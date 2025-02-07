@@ -15,7 +15,7 @@ jobs:
     name: Don't Run on Draft PR
     runs-on: ubuntu-latest
     steps:
-      - uses: z0gSh1u/dont-run-on-draft-pr@v1.0.0
+      - uses: z0gSh1u/dont-run-on-draft-pr@v1
 
   whatever-else:
     needs: dont-run-on-draft-pr
