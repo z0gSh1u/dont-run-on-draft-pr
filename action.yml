@@ -1,6 +1,9 @@
 name: Dont Run on Draft PR
 author: zx.cs@qq.com
 description: This action will fail if the PR is a draft.
+branding:
+  icon: skip-forward
+  color: green
 
 runs:
   using: composite
